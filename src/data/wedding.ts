@@ -9,7 +9,7 @@ export const music = {
 export const couple = {
   partner1: {
     name: 'Amstel',
-    fullName: 'Amstel Sharma',
+    fullName: "Amstel D'Cruz",
     image: '/images/couple/amstel.webp',
     bio: 'A dreamer with an old soul who finds poetry in the quiet corners of everyday life, and a steady hand for every wild idea.',
   },
@@ -40,7 +40,7 @@ export const story = [
     date: 'Monsoon · 2024',
     title: 'The Question',
     description:
-      'Under rain-washed skies in Udaipur, a question was asked and an answer given that turned two paths into one.',
+      'Under rain-washed skies in Mangalore, a question was asked and an answer given that turned two paths into one.',
   },
   {
     date: 'Spring · 2025',
@@ -50,62 +50,46 @@ export const story = [
   },
 ]
 
+// Christian wedding celebrations (no Mehendi / Haldi / Sangeet).
+// Replace venues, dates, and dress codes with your real details.
 export const events = [
   {
-    name: 'Mehendi',
-    date: 'February 12, 2027',
-    time: '4:00 PM onwards',
-    venue: 'The Pool Lawn',
-    dressCode: 'Festive Casual · Greens & Yellows',
+    name: 'Engagement',
+    date: 'December 20, 2026',
+    time: '6:30 PM',
+    venue: 'The Family Estate',
+    dressCode: 'Semi-Formal · Pastels',
     description:
-      'An afternoon of henna artistry, folk music, and celebration beneath the open Udaipur sky.',
-  },
-  {
-    name: 'Sangeet',
-    date: 'February 13, 2027',
-    time: '7:00 PM onwards',
-    venue: 'The Grand Ballroom',
-    dressCode: 'Cocktail · Jewel Tones',
-    description:
-      'A night of dance and unforgettable performances, where every family becomes one big dance floor.',
-  },
-  {
-    name: 'Haldi',
-    date: 'February 14, 2027',
-    time: '10:00 AM',
-    venue: 'The Garden Terrace',
-    dressCode: 'Casual · Whites & Yellows',
-    description:
-      'A blessing of turmeric and joy — a golden morning with the ones we love the most.',
+      'The evening we promised forever — rings exchanged among family, laughter, and the first glimpse of all that is to come.',
   },
   {
     name: 'Wedding Ceremony',
     date: 'February 14, 2027',
-    time: '6:00 PM',
-    venue: 'The Grand Mandap',
-    dressCode: 'Traditional Indian Formal',
+    time: '10:00 AM',
+    venue: 'Milagres Church, Mangalore',
+    dressCode: 'Church Formal · Whites & Creams',
     description:
-      'The sacred moment when two become one, surrounded by fire, flowers, and the people who made us.',
+      'Before God and our loved ones, we exchange our vows and begin the covenant of marriage.',
   },
   {
     name: 'Reception',
-    date: 'February 15, 2027',
-    time: '7:30 PM onwards',
-    venue: 'The Crystal Hall',
-    dressCode: 'Black Tie · Formal Indian',
+    date: 'February 14, 2027',
+    time: '7:00 PM onwards',
+    venue: 'The Ocean Pearl, Mangalore',
+    dressCode: 'Black Tie / Formal',
     description:
-      'An evening of feasting and dancing to celebrate the beginning of our forever.',
+      'An evening of feasting, toasts, and dancing as we celebrate the start of our life together.',
   },
 ]
 
 export const venue = {
-  name: 'The Leela Palace',
-  city: 'Udaipur',
-  address: 'Lake Pichola, Udaipur, Rajasthan 313001',
-  mapUrl: 'https://maps.google.com/?q=Leela+Palace+Udaipur',
-  image: '/images/venue/leela-palace.webp',
+  name: 'The Ocean Pearl',
+  city: 'Mangalore',
+  address: 'Mangalore, Karnataka 575001',
+  mapUrl: 'https://maps.google.com/?q=The+Ocean+Pearl+Mangalore',
+  image: '/images/venue/mangalore.webp',
   description:
-    'Nestled on the banks of Lake Pichola, where centuries of royal grandeur meet the calm of an evening lake — the perfect setting for a new beginning.',
+    'Where the Arabian Sea meets the Mangalore coast, and centuries of warmth meet the calm of an evening shore — the perfect setting for a new beginning.',
 }
 
 export const galleryImages = [

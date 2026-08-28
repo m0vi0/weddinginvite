@@ -19,12 +19,31 @@ make_img () {
   rm -f "$out.png"
 }
 
+# Richer venue hero with layered sky/sea/shore gradients + a horizon line,
+# so the full-bleed section reads as a real coastal photograph placeholder
+# (not a flat low-detail block). Label kept small and lower-third.
+make_venue () {
+  # $1 = out path, $2 = w, $3 = h
+  local out="$1" w="$2" h="$3"
+  local sky="$((h*55/100))" sea="$((h*82/100))"
+  # sky: dusk gradient; sea: deeper teal; shore: warm sand
+  convert -size "${w}x${h}" xc:none \
+    \( -size "${w}x${sky}" gradient:"#caa86a"-"#7a3b3f" \) -gravity north -composite \
+    \( -size "${w}x$((sea-sky))" gradient:"#3a5560"-"#1f3a44" \) -gravity north -geometry +0+"${sky}" -composite \
+    \( -size "${w}x$((h-sea))" gradient:"#d9c39a"-"#b89e74" \) -gravity south -composite \
+    \( -size "${w}x2" xc:"#fdfcfa" -alpha set -channel a -evaluate multiply 0.5 \) -gravity north -geometry +0+"${sea}" -composite \
+    -gravity south -pointsize $((w/22)) -font "Georgia" -fill "#faf7f2" -annotate +0+40 "Mangalore" \
+    "$out.png"
+  cwebp -quiet -q 88 "$out.png" -o "$out.webp"
+  rm -f "$out.png"
+}
+
 # Couple portraits (3:4)
 make_img "$ROOT/couple/amstel"   900 1200 "#6b1d2a" "A" "#c9a84c"
 make_img "$ROOT/couple/lirisha"  900 1200 "#4a1420" "L" "#d4b96a"
 
-# Venue
-make_img "$ROOT/venue/leela-palace" 1600 1000 "#2a2a2a" "Udaipur" "#c9a84c"
+# Venue — Mangalore coastal hero (richer layered placeholder)
+make_venue "$ROOT/venue/mangalore" 1600 1000
 
 # Gallery (varied)
 make_img "$ROOT/gallery/01" 900 1200 "#6b1d2a" "01" "#c9a84c"

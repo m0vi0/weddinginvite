@@ -84,10 +84,10 @@ export function StorySection() {
         {/* rail + items */}
         <div className="relative">
           {/* vertical gold rail */}
-          <div className="absolute left-[5px] top-2 h-[calc(100%-1rem)] w-px bg-gold/25 md:left-1/2 md:-translate-x-1/2" />
+          <div className="absolute left-[5px] top-2 h-[calc(100%-1rem)] w-px bg-gold/25" />
           <div
             ref={railRef}
-            className="absolute left-[5px] top-2 h-[calc(100%-1rem)] w-px origin-top bg-gold md:left-1/2 md:-translate-x-1/2"
+            className="absolute left-[5px] top-2 h-[calc(100%-1rem)] w-px origin-top bg-gold"
             style={{ transform: 'scaleY(0)' }}
           />
 
