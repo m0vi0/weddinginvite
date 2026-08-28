@@ -1,5 +1,11 @@
 import { colors } from '../design-tokens'
 
+export const music = {
+  src: '/audio/wedding-theme.mp3',
+  // Swap in your real song by replacing public/audio/wedding-theme.mp3
+  // or changing this path. Keep it short/loopable for background playback.
+}
+
 export const couple = {
   partner1: {
     name: 'Amstel',
