@@ -1,4 +1,5 @@
 import { Navigation } from './components/layout/Navigation'
+import { MusicPlayer } from './components/layout/MusicPlayer'
 import { Hero } from './components/hero/Hero'
 import { CoupleSection } from './components/couple/CoupleSection'
 import { StorySection } from './components/story/StorySection'
@@ -12,6 +13,7 @@ export default function App() {
   return (
     <main className="relative">
       <Navigation />
+      <MusicPlayer />
       <Hero />
       <CoupleSection />
       <StorySection />
