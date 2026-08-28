@@ -21,7 +21,7 @@ make_img () {
 
 # Couple portraits (3:4)
 make_img "$ROOT/couple/amstel"   900 1200 "#6b1d2a" "A" "#c9a84c"
-make_img "$ROOT/couple/priya"    900 1200 "#4a1420" "P" "#d4b96a"
+make_img "$ROOT/couple/lirisha"  900 1200 "#4a1420" "L" "#d4b96a"
 
 # Venue
 make_img "$ROOT/venue/leela-palace" 1600 1000 "#2a2a2a" "Udaipur" "#c9a84c"
