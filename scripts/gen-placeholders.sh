@@ -37,7 +37,7 @@ make_img "$ROOT/gallery/07" 1000 1000 "#2a2a2a" "07" "#c9a84c"
 make_img "$ROOT/gallery/08" 1200 900  "#4a1420" "08" "#d4b96a"
 
 # OG image (social share)
-make_img "$ROOT/og-image" 1200 630 "#6b1d2a" "A & P" "#c9a84c"
+make_img "$ROOT/og-image" 1200 630 "#6b1d2a" "A & L" "#c9a84c"
 
 echo "Generated placeholder images:"
 find "$ROOT" -name '*.webp' | sort
