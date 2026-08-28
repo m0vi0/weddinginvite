@@ -8,9 +8,9 @@ export const couple = {
     bio: 'A dreamer with an old soul who finds poetry in the quiet corners of everyday life, and a steady hand for every wild idea.',
   },
   partner2: {
-    name: 'Priya',
-    fullName: 'Priya Mehta',
-    image: '/images/couple/priya.webp',
+    name: 'Lirisha',
+    fullName: 'Lirisha Dsouza',
+    image: '/images/couple/lirisha.webp',
     bio: 'An adventurer at heart who turns every ordinary moment into a story worth telling, and fills every room with light.',
   },
 }
@@ -115,8 +115,8 @@ export const galleryImages = [
 
 export const closing = {
   message: "We can't wait to celebrate with you.",
-  tagline: 'Two souls, one journey · Amstel & Priya',
-  monogram: 'A & P',
+  tagline: 'Two souls, one journey · Amstel & Lirisha',
+  monogram: 'A & L',
 }
 
 export const petals = {
